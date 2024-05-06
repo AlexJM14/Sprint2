@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		47811E572BD69FDB00684F4F /* Sprint2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E562BD69FDB00684F4F /* Sprint2App.swift */; };
-		47811E592BD69FDB00684F4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E582BD69FDB00684F4F /* ContentView.swift */; };
 		47811E5B2BD69FDB00684F4F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E5A2BD69FDB00684F4F /* Item.swift */; };
 		47811E5D2BD69FDE00684F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47811E5C2BD69FDE00684F4F /* Assets.xcassets */; };
 		47811E602BD69FDE00684F4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47811E5F2BD69FDE00684F4F /* Preview Assets.xcassets */; };
 		47811E6A2BD69FDF00684F4F /* Sprint2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E692BD69FDF00684F4F /* Sprint2Tests.swift */; };
 		47811E742BD69FDF00684F4F /* Sprint2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E732BD69FDF00684F4F /* Sprint2UITests.swift */; };
 		47811E762BD69FDF00684F4F /* Sprint2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E752BD69FDF00684F4F /* Sprint2UITestsLaunchTests.swift */; };
+		47811E832BD6A16600684F4F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E822BD6A16600684F4F /* MainView.swift */; };
+		47811E882BD6AC3400684F4F /* EntradaDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47811E872BD6AC3400684F4F /* EntradaDatos.swift */; };
+		47BCE8502BE375EE00550DE6 /* calculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCE84F2BE375EE00550DE6 /* calculadora.swift */; };
+		47F805572BE7FE5F0018A5C9 /* Resultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F805562BE7FE5F0018A5C9 /* Resultado.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		47811E532BD69FDB00684F4F /* Sprint2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprint2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47811E562BD69FDB00684F4F /* Sprint2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint2App.swift; sourceTree = "<group>"; };
-		47811E582BD69FDB00684F4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47811E5A2BD69FDB00684F4F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		47811E5C2BD69FDE00684F4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47811E5F2BD69FDE00684F4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +48,10 @@
 		47811E6F2BD69FDF00684F4F /* Sprint2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sprint2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47811E732BD69FDF00684F4F /* Sprint2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint2UITests.swift; sourceTree = "<group>"; };
 		47811E752BD69FDF00684F4F /* Sprint2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		47811E822BD6A16600684F4F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		47811E872BD6AC3400684F4F /* EntradaDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntradaDatos.swift; sourceTree = "<group>"; };
+		47BCE84F2BE375EE00550DE6 /* calculadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculadora.swift; sourceTree = "<group>"; };
+		47F805562BE7FE5F0018A5C9 /* Resultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resultado.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,10 @@
 		47811E552BD69FDB00684F4F /* Sprint2 */ = {
 			isa = PBXGroup;
 			children = (
+				47811E862BD6A5D600684F4F /* datos */,
+				47811E852BD6A5CA00684F4F /* dominio */,
+				47811E842BD6A5B700684F4F /* presentacion */,
 				47811E562BD69FDB00684F4F /* Sprint2App.swift */,
-				47811E582BD69FDB00684F4F /* ContentView.swift */,
 				47811E5A2BD69FDB00684F4F /* Item.swift */,
 				47811E5C2BD69FDE00684F4F /* Assets.xcassets */,
 				47811E5E2BD69FDE00684F4F /* Preview Content */,
@@ -128,6 +136,31 @@
 				47811E752BD69FDF00684F4F /* Sprint2UITestsLaunchTests.swift */,
 			);
 			path = Sprint2UITests;
+			sourceTree = "<group>";
+		};
+		47811E842BD6A5B700684F4F /* presentacion */ = {
+			isa = PBXGroup;
+			children = (
+				47811E822BD6A16600684F4F /* MainView.swift */,
+				47811E872BD6AC3400684F4F /* EntradaDatos.swift */,
+				47F805562BE7FE5F0018A5C9 /* Resultado.swift */,
+			);
+			path = presentacion;
+			sourceTree = "<group>";
+		};
+		47811E852BD6A5CA00684F4F /* dominio */ = {
+			isa = PBXGroup;
+			children = (
+				47BCE84F2BE375EE00550DE6 /* calculadora.swift */,
+			);
+			path = dominio;
+			sourceTree = "<group>";
+		};
+		47811E862BD6A5D600684F4F /* datos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = datos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47811E592BD69FDB00684F4F /* ContentView.swift in Sources */,
 				47811E5B2BD69FDB00684F4F /* Item.swift in Sources */,
+				47BCE8502BE375EE00550DE6 /* calculadora.swift in Sources */,
+				47811E832BD6A16600684F4F /* MainView.swift in Sources */,
+				47F805572BE7FE5F0018A5C9 /* Resultado.swift in Sources */,
 				47811E572BD69FDB00684F4F /* Sprint2App.swift in Sources */,
+				47811E882BD6AC3400684F4F /* EntradaDatos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sprint2/Preview Content\"";
+				DEVELOPMENT_TEAM = UMG3XG3ASF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -454,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sprint2/Preview Content\"";
+				DEVELOPMENT_TEAM = UMG3XG3ASF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
